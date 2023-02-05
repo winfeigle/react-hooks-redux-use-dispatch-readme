@@ -2,6 +2,12 @@ const initialState = {
   items: [],
 };
 
+// Action Creators (make sure to use "export" before function)
+export function incrementCount() {
+  return { type: "count/increment" };
+}
+
+// Reducer
 function counterReducer(state = initialState, action) {
   switch (action.type) {
     case "count/increment":
